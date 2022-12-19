@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The LineageOS Project
- * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (C) 2019 The eternityos Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pixelexperience.ota.model;
+package org.eternityos.ota.model;
 
-import java.io.File;
+import java.util.ArrayList;
 
-public interface UpdateInfo extends UpdateBaseInfo {
-    UpdateStatus getStatus();
+public interface UpdateBaseInfo {
+    String getName();
 
-    File getFile();
+    String getDownloadId();
+
+    long getTimestamp();
+
+    String getVersion();
+
+    String getDownloadUrl();
 
     long getFileSize();
+
+    String getDonateUrl();
+
+    String getForumUrl();
+
+    String getWebsiteUrl();
+
+    String getNewsUrl();
+
+    ArrayList<MaintainerInfo> getMaintainers();
+
+    String getHash();
 }

@@ -11,7 +11,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "org.pixelexperience.ota"
+        applicationId "org.eternityos.ota"
         minSdk 33
         targetSdk 33
         versionCode 1

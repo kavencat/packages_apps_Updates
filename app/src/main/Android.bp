@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022 The PixelExperience Project
+// Copyright (C) 2022 The eternityos Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -41,13 +41,13 @@ android_app {
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
-    required: ["privapp_whitelist_org.pixelexperience.ota.xml"],
+    required: ["privapp_whitelist_org.eternityos.ota.xml"],
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_org.pixelexperience.ota.xml",
+    name: "privapp_whitelist_org.eternityos.ota.xml",
     system_ext_specific: true,
-    src: "privapp_whitelist_org.pixelexperience.ota.xml",
+    src: "privapp_whitelist_org.eternityos.ota.xml",
     sub_dir: "permissions",
 }
 

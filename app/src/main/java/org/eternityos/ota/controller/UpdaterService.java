@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The LineageOS Project
- * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (C) 2019 The eternityos Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pixelexperience.ota.controller;
+package org.eternityos.ota.controller;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -31,14 +31,14 @@ import android.util.Log;
 import androidx.core.app.NotificationCompat;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import org.pixelexperience.ota.R;
-import org.pixelexperience.ota.UpdaterReceiver;
-import org.pixelexperience.ota.UpdatesActivity;
-import org.pixelexperience.ota.UpdatesCheckReceiver;
-import org.pixelexperience.ota.misc.Utils;
-import org.pixelexperience.ota.model.Update;
-import org.pixelexperience.ota.model.UpdateInfo;
-import org.pixelexperience.ota.model.UpdateStatus;
+import org.eternityos.ota.R;
+import org.eternityos.ota.UpdaterReceiver;
+import org.eternityos.ota.UpdatesActivity;
+import org.eternityos.ota.UpdatesCheckReceiver;
+import org.eternityos.ota.misc.Utils;
+import org.eternityos.ota.model.Update;
+import org.eternityos.ota.model.UpdateInfo;
+import org.eternityos.ota.model.UpdateStatus;
 
 import java.text.NumberFormat;
 

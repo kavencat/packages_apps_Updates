@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The LineageOS Project
- * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (C) 2019 The eternityos Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pixelexperience.ota;
+package org.eternityos.ota.model;
 
-import androidx.appcompat.app.AppCompatActivity;
+import java.io.File;
 
-import org.pixelexperience.ota.model.UpdateInfo;
+public interface UpdateInfo extends UpdateBaseInfo {
+    UpdateStatus getStatus();
 
-public abstract class UpdatesListActivity extends AppCompatActivity {
-    public abstract void exportUpdate(UpdateInfo update);
+    File getFile();
 
-    public abstract void showSnackbar(int stringId, int duration);
-    public abstract void showSnackbar(String text, int duration);
+    long getFileSize();
 }
